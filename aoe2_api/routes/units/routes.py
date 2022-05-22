@@ -38,4 +38,4 @@ def get_units():
         abort(400, DATA_STORE_BAD)
 
     data = datastore.filter_units(cost=available_cost)
-    return jsonify({"data": [s.to_json() for s in data]}), 201
+    return jsonify({"data": [s.to_json() for s in data]})
