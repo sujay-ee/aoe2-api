@@ -38,4 +38,4 @@ def get_structures():
         abort(400, DATA_STORE_BAD)
 
     data = datastore.filter_structures(cost=available_cost)
-    return jsonify({"data": [s.to_json() for s in data]}), 201
+    return jsonify({"data": [s.to_json() for s in data]})
